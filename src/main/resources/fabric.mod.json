@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "inventorysort",
+	"version": "${version}",
+	"name": "Inventory Sort",
+	"description": "Кнопки переноса и сортировки в сундуках и инвентаре.",
+	"authors": ["biklu"],
+	"license": "MIT",
+	"icon": "assets/inventorysort/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.inventorysort.InventorySortMod"],
+		"client": ["com.inventorysort.client.InventorySortClient"]
+	},
+	"mixins": [
+		{
+			"config": "inventorysort.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
